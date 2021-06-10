@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>press the number.</p>
+<input id="myInput" type="number">
+
+<button onclick="myFunction()">and the day is...</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var day = document.getElementById("myInput").value;
+
+  switch(day) {
+    case "1":
+      text = "monday";
+    break;
+    case "2":
+    text = "tuesday";
+    break;
+    case "3":
+    text = "wednesday";
+    break;
+   case "4":
+    text = "Thursday";
+    break;
+   case "5":
+    text = "Friday";
+    break;
+  case "6":
+    text = "saturday";
+    break;
+  case "7":
+    text = "sunday";
+    break;
+    default:
+    text = "wrong selection";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
